@@ -1,0 +1,110 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fondo general y tipografía */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #fff8f0, #ffe5d9);
+  color: #333;
+  padding: 20px;
+}
+
+/* Encabezado */
+header {
+  background-color: #d62828;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 2.5em;
+  letter-spacing: 1px;
+}
+
+/* Contenido principal */
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Títulos */
+h2 {
+  color: #d62828;
+  margin-bottom: 15px;
+}
+
+/* Párrafos y etiquetas */
+p, label {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Campos del formulario */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: #fefefe;
+}
+
+/* Radios */
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+/* Botones */
+input[type="submit"],
+input[type="reset"] {
+  background-color: #f77f00;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  margin-right: 10px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #c65f00;
+}
+
+/* Footer */
+footer {
+  background-color: #d62828;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 14px;
+  border-top: 4px solid #f77f00;
+}
+
+footer a {
+  color: #ffe5d9;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contáctanos</title>
+    <link rel="stylesheet" href="../CSS/estiloContacto.css">
+</head>
+
+<header>
+    <h1>Contáctanos - AQUI INVENTAMOS NOMBRE</h1>
+</header>
+
+<body>
+    
+    <h1>Contáctanos</h1>
+
+    <h2>📞 Información de contacto</h2>
+    <Center>
+    <p><strong>Teléfono:</strong> +506 0000-0000</p>
+    <p><strong>Dirección:</strong> Avenida Central, frente al parque de los mangos, Alajuela Centro, Alajuela</p>
+    <p><strong>Horario:</strong> Lunes a sábado: 12:00 m.d. – 10:00 p.m. | Domingo: 12:00 p.m. – 12:00 p.m.</p>
+    </Center>
+
+    <hr>
+
+    <h2>📝 Formulario de contacto</h2>
+    <form action="mailto:condominiumlive16@gmail.com" method="post" enctype="text/plain">
+        
+        <!-- Entrada 1: Nombre (texto) -->
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <!-- Entrada 2: Correo (email) -->
+        <label for="correo">Correo electrónico:</label><br>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <!-- Entrada 3: Teléfono (tel) -->
+        <label for="telefono">Número de teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono"><br><br>
+
+        <!-- Entrada 4: Motivo de contacto (select) -->
+        <label for="motivo">Motivo de contacto:</label><br>
+        <select id="motivo" name="motivo">
+        <option value="consulta">Consulta</option>
+        <option value="pedido">Pedido</option>
+        <option value="sugerencia">Sugerencia</option>
+        <option value="otro">Otro</option>
+        </select><br><br>
+
+        <!-- Entrada 5: ¿Has visitado nuestro local? (radio) -->
+        <p>¿Has visitado nuestro local?</p>
+        <input type="radio" id="si" name="visita" value="sí">
+        <label for="si">Sí</label><br>
+        <input type="radio" id="no" name="visita" value="no">
+        <label for="no">No</label><br><br>
+
+        <!-- Entrada 6: Comentarios adicionales (textarea) -->
+        <label for="comentarios">Comentarios adicionales:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea><br><br>
+
+        <!-- Botón de envío -->
+        <input type="submit" value="Enviar mensaje">
+        <input type="reset" value="Limpiar formulario">
+
+    </form>
+
+</body>
+
+<footer>
+
+    <p>&copy; 2025 AQUI INVENTAMOS NOMBRE. Todos los derechos reservados.</p>
+    <p>
+        <a href="AcercaDe.html">Facebook</a> |
+        <a href="#">Instagram</a> |
+        <a href="#">TikTok</a>
+    </p>
+
+</footer>
+</html>
