@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GastroUrban | Inicio</title>
+    <link rel="stylesheet" href="CSS/estiloInicio.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/Logo/GastrourbanRemove.png" alt="Logo de GastroUrban">
+        </div>
+        <nav class="nav-principal">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="HTML/nosotros.html">Nosotros</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="HTML/contacto.html">Contacto</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="HTML/acercaDe.html">Acerca de</a></li>
+            </ul>
+        <div class="menu-hamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </nav>
+    </header>
+
+    <!-- Contenido principal -->
+    <main> 
+            <!-- Identidad y mensaje principal -->
+        <section class="hero">
+            <h2>Comida urbana con carácter</h2>
+            <p>GastroUrban fusiona la cocina callejera con técnicas modernas y sabores auténticos. Nacimos en Alajuela para ofrecer platos hechos al momento, para todos los gustos.</p>
+            <blockquote>“Cada plato cuenta una historia: desde el casado reinventado hasta tacos fusión y hamburguesas artesanales.”</blockquote>
+        </section>
+
+        <!-- Sección de identidad -->
+        <section class="identidad">
+            <h2>¿Quiénes somos?</h2>
+            <p>Somos una empresa costarricense apasionada por la gastronomía urbana, inclusiva y llena de sabor. En GastroUrban, cocinamos con ingredientes frescos, técnicas cuidadas y un ambiente que te hará volver.</p>
+        </section>
+
+        <!-- Resumen de productos y servicios -->
+        <section class="resumen-productos">
+            <h2>Lo que hacemos en 3 segundos</h2>
+            <ul class="galeria">
+                <li>🍔 <strong>Hamburguesas artesanales</strong></li>
+                <li>🌮 <strong>Tacos con estilo fusión</strong></li>
+                <li>🍛 <strong>Platos típicos con toque moderno</strong></li>
+                <li>🥗 <strong>Bowls saludables</strong></li>
+                <li>🍹 <strong>Batidos naturales</strong></li>
+                <li>🛵 <strong>Servicio para llevar y a domicilio</strong></li>
+            </ul>
+            <p style="text-align:center; font-style:italic;">Todo preparado con ingredientes frescos y técnicas cuidadas.</p>
+        </section>
+
+        <!-- Carrusel -->
+        <section class="carrusel">
+            <img src="img/Productos/burguersUrban.png" alt="Hamburguesa urbana">
+            <img src="img/Productos/tacosFusion.png" alt="Tacos fusión">
+            <img src="img/Productos/casadosUrbanos.png" alt="Casado urbano">
+            <img src="img/Productos/bowlGastro.png" alt="Bolw gastro">
+            <img src="img/Productos/batidosUrbanos.png" alt="Batidos urbanos">
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 GastroUrban. Todos los derechos reservados.</p>
+        <p>Síguenos en:
+            <a href="https://www.facebook.com">Facebook</a> |
+            <a href="https://www.instagram.com">Instagram</a> |
+            <a href="https://www.tiktok.com">TikTok</a>
+        </p>
+        <p>Ubicación: Alajuela, Costa Rica</p>
+    </footer>
+
+    <script>
+        const hamburguesa = document.querySelector('.menu-hamburguesa');
+        const nav = document.querySelector('.nav-principal');
+
+        hamburguesa.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        });
+    </script>
+
+    <script>
+        const carrusel = document.querySelector('.carrusel');
+        let posicion = 0;
+        let velocidad = 0.5; // Saltosp or segundo
+        let pausado = false;
+
+        // Pausar al pasar el mouse
+        carrusel.addEventListener('mouseenter', () => pausado = true);
+        carrusel.addEventListener('mouseleave', () => pausado = false);
+
+        function animarCarrusel() {
+            if (!pausado) {
+            posicion += velocidad;
+            if (posicion >= carrusel.scrollWidth - carrusel.clientWidth) {
+                posicion = 0;
+            }
+            carrusel.scrollTo({
+                left: posicion,
+                behavior: 'auto'
+            });
+            }
+            requestAnimationFrame(animarCarrusel);
+        }
+
+        requestAnimationFrame(animarCarrusel);
+    </script>
+</body>
+</html>

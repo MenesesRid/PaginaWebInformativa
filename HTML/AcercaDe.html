@@ -7,16 +7,36 @@
     <link rel="stylesheet" href="../CSS/estiloAcercaDe.css">
 </head>
 
-<header>
-    <h1>ACERCA DE NOSOTROS</h1>
-</header>
-
 <body>
+    <header>
+        <div class="logo">
+            <img src="../img/Logo/GastrourbanRemove.png" alt="Logo de GastroUrban">
+        </div>
+        <nav class="nav-principal">
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="acercaDe.html">Acerca de</a></li>
+            </ul>
+        <div class="menu-hamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </nav>
+    </header>
+
     <main>
+        <h1>ACERCA DE NOSOTROS</h1>
+        <br>
+        <br>
         <!-- Perfil Estudiante 1 -->
         <section>
             <h2>Jarret Orozco Salas</h2>
-            <img src="../img/fotoJarret.jpeg" alt="Foto de Jarret Orozco" width="200">
+            <img src="../img/fotoJarret.jpg" alt="Foto de Jarret Orozco" width="200">
             <p><strong>Cédula:</strong> 4-0268-0990</p>
             <p><strong>Correo electrónico:</strong> jarretsalas@gmail.com</p>
             <p><strong>Información adicional:</strong> Estudiante de Ingenieria en Software en la UTN, INVENTAR AQUI</p>
@@ -32,12 +52,24 @@
             <p><strong>Correo electrónico:</strong> ridleymeneses@gmail.com</p>
             <p><strong>Información adicional:</strong> Estudiante de Ingenieria en Software en la UTN, INVENTAR AQUI</p>
         </section>
-
     </main>
     
+    <footer>
+        <p>&copy; 2025 GASTROURBAN. Todos los derechos reservados.</p>
+        <p>
+            <a href="https://www.facebook.com">Facebook</a> |
+            <a href="https://www.instagram.com">Instagram</a> |
+            <a href="https://www.tiktok.com">TikTok</a>
+        </p>
+    </footer>
+    <script>
+        const hamburguesa = document.querySelector('.menu-hamburguesa');
+        const nav = document.querySelector('.nav-principal');
+
+        hamburguesa.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        });
+    </script>
 </body>
 
-<footer>
-    <p>&copy; 2025 Proyecto - UTN Sede Central</p>
-</footer>
 </html>

@@ -7,17 +7,33 @@
     <link rel="stylesheet" href="../CSS/estiloContacto.css">
 </head>
 
-<header>
-    <h1>Contáctanos - AQUI INVENTAMOS NOMBRE</h1>
-</header>
-
 <body>
+    <header>
+        <div class="logo">
+            <img src="../img/Logo/GastrourbanRemove.png" alt="Logo de GastroUrban">
+        </div>
+        <nav class="nav-principal">
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="acercaDe.html">Acerca de</a></li>
+            </ul>
+        <div class="menu-hamburguesa">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        </nav>
+    </header>
     
     <h1>Contáctanos</h1>
 
     <h2>📞 Información de contacto</h2>
     <Center>
-    <p><strong>Teléfono:</strong> +506 0000-0000</p>
+    <p><strong>Teléfono:</strong> +506 6029-0100</p>
     <p><strong>Dirección:</strong> Avenida Central, frente al parque de los mangos, Alajuela Centro, Alajuela</p>
     <p><strong>Horario:</strong> Lunes a sábado: 12:00 m.d. – 10:00 p.m. | Domingo: 12:00 p.m. – 12:00 p.m.</p>
     </Center>
@@ -65,16 +81,25 @@
 
     </form>
 
+    <footer>
+        <p>&copy; 2025 GASTROURBAN. Todos los derechos reservados.</p>
+        <p>
+            <a href="https://www.facebook.com">Facebook</a> |
+            <a href="https://www.instagram.com">Instagram</a> |
+            <a href="https://www.tiktok.com">TikTok</a>
+        </p>
+    </footer>
+
+    <script>
+        const hamburguesa = document.querySelector('.menu-hamburguesa');
+        const nav = document.querySelector('.nav-principal');
+
+        hamburguesa.addEventListener('click', () => {
+        nav.classList.toggle('active');
+        });
+    </script>
+
 </body>
 
-<footer>
 
-    <p>&copy; 2025 AQUI INVENTAMOS NOMBRE. Todos los derechos reservados.</p>
-    <p>
-        <a href="AcercaDe.html">Facebook</a> |
-        <a href="#">Instagram</a> |
-        <a href="#">TikTok</a>
-    </p>
-
-</footer>
 </html>
