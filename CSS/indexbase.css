@@ -46,6 +46,10 @@ footer{
 }
 main{
     flex: 1;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 header img {
@@ -74,4 +78,16 @@ header img {
     font-weight: 500;
 }
 
+#categoryFilter {
+  margin-bottom: 1em;
+  padding: 0.5em;
+  font-size: 1rem;
+}
+
+.post {
+  padding: 1em;
+  margin-bottom: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 

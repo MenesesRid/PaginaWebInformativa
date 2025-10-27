@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GastroUrban - Blogs</title>
+    <!--Imagen de la pestaña del navegador-->
     <link rel="icon" href="../img/Logo/Gastrourban Logo.png" type="image/png">
+    
     <link rel="stylesheet" href="../CSS/indexbase.css">
+    <link rel="stylesheet" href="../CSS/estiloblogs.css">
 </head>
 <body>
+    <!--Encabezado generico para todas las paginas-->
     <header>
         <div class="logonombre">
         <a href="index.html">
@@ -27,14 +31,93 @@
             </ul>
         </nav>
     </header>
-    <!-- index.html -->
-    <section class="blog-list">
-    <article class="blog-card">
-        <h2>Título del blog</h2>
-        <p>Resumen breve del contenido...</p>
-        <a href="blog1.html">Leer más</a>
-    </article>
-    <!-- Repetir para cada blog -->
-    </section>
+    <div class="page-layout">
+        <main>
+            <!--Titulo de la pagina principal de los blogs-->
+            <div class="encabezado_blog">
+                <h1>Blogs - Más Cerca de Ti</h1>
+                <p>
+                    En <strong>GastroUrban</strong> creemos en brindarte las herramientas necesarias para crecer. Por eso, te 
+                    ofrecemos una variedad de blogs que te ayudarán a descubrir, aprender y avanzar en tu camino.
+                </p>
+            </div>
+
+            <div>
+                <h2>Filtrar por categoría</h2>
+                <select id="categoryFilter">
+                    <option value="all">Todas</option>
+                    <option value="receta">Recetas</option>
+                    <option value="consejo">Consejos</option>
+                    <option value="cocinaUtencilio">Cocina y Utencilios</option>           
+                </select>
+            </div>
+
+            <div id="postsContainer">
+                <div class="blog-card post" data-category="receta">
+                    <img src="../img/receta1.jpg" alt="">
+                <h2>Receta marizcos</h2>
+                <p>Una introducción práctica al lenguaje que da vida a la web.</p>
+                </div>
+
+                <div class="blog-card post" data-category="receta">
+                    <h2>Diseño instruccional en entornos digitales</h2>
+                    <p>Claves para crear experiencias de aprendizaje efectivas.</p>
+                </div>
+
+                <div class="blog-card post" data-category="consejo">
+                    <h2>Alimentación consciente</h2>
+                    <p>Cómo mejorar tu bienestar a través de hábitos saludables.</p>
+                </div>
+
+                <div class="blog-card post" data-category="consejo">
+                    <h2>Accesibilidad web: más allá del diseño</h2>
+                    <p>Buenas prácticas para crear sitios inclusivos. lo</p>
+                </div>
+
+                            <div class="blog-card post" data-category="cocinaUtencilio">
+                    <h2>Accesibilidad web: más allá del diseño</h2>
+                    <p>Buenas prácticas para crear sitios inclusivos. </p>
+                </div>
+
+                            <div class="blog-card post" data-category="cocinaUtencilio">
+                    <h2>Accesibilidad web: más allá del diseño</h2>
+                    <p>Buenas prácticas para crear sitios inclusivos.</p>
+                </div>
+
+                            <div class="blog-card post" data-category="cocinaUtencilio">
+                    <h2>Accesibilidad web: más allá del diseño</h2>
+                    <p>Buenas prácticas para crear sitios inclusivos.</p>
+                </div>
+
+                            <div class="blog-card post" data-category="cocinaUtencilio">
+                    <h2>Accesibilidad web: más allá del diseño</h2>
+                    <p>Buenas prácticas para crear sitios inclusivos.</p>
+                </div>
+
+                            <div class="blog-card post" data-category="receta">
+                    <h2>Accesibilidad web: más allá del diseño</h2>
+                    <p>Buenas prácticas para crear sitios inclusivos.</p>
+                </div>
+
+                            <div class="blog-card post" data-category="consejo">
+                    <h2>Accesibilidad web: más allá del diseño</h2>
+                    <p>Buenas prácticas para crear sitios inclusivos.</p>
+                </div>
+
+            </div>      
+            <!--Vinculo a las acciones para la pagina de los blogs-->
+            <script src="../JS/blog_accion.js"></script>
+            </main>
+
+        
+        <aside class="indice">
+            <h3>Índice</h3>
+            <ul>
+            <li><a href="#categoria-recetas">Recetas</a></li>
+            <li><a href="#categoria-consejos">Consejos</a></li>
+            <li><a href="#categoria-utensilios">Cocina y Utensilios</a></li>
+        </ul>
+        </aside>
+    </div>
 </body>
 </html>

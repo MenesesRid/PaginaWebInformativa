@@ -1,0 +1,157 @@
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/*Selector de las categoria (posiblemente en los moviles, pensando en cambiarlo)*/
+
+select {
+    padding: 0.6em 1em;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 1rem;
+}
+
+/** Distribucion de carta de las entrada de los blogs*/
+#blogContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding-top: 1rem;
+}
+
+#postsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.blog-card {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.blog-card img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.blog-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.blog-card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+}
+
+.blog-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #555;
+    flex-grow: 1;
+}
+
+/* ====== LAYOUT GENERAL ====== */
+.page-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 3000px;
+    
+    gap: 5px; /* Espacio entre contenido e índice */
+}
+
+/*  CONTENIDO PRINCIPAL  */
+main {
+    flex: 1; /* Se adapta según el espacio */
+    max-width: 850px; /* Limita el ancho para buena lectura */
+    background-color: lightcoral;
+    padding: 20px;
+}
+
+/*  ÍNDICE LATERAL  */
+.indice {
+  width: 250px; /* Tamaño equilibrado */
+    position: sticky;
+    top: 20px;
+    align-self: flex-start;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    height: fit-content;
+}
+
+/*  ESTILO DEL ÍNDICE  */
+.indice h3 {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.indice ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.indice li {
+    margin-bottom: 8px;
+}
+
+.indice a {
+    text-decoration: none;
+    color: #0077cc;
+    font-weight: 500;
+}
+
+.indice a:hover {
+    text-decoration: underline;
+}
+
+/*  RESPONSIVE por media queris */
+@media (max-width: 1100px) {
+        .page-layout {
+        gap: 15px;
+    }
+
+    .indice {
+        width: 200px;
+    }
+}
+
+@media (max-width: 900px) {
+    .page-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main {
+        max-width: 100%;
+    }
+
+    .indice {
+        display: none; /* Oculta el índice en pantallas pequeñas */
+    }
+}
+
+
+
