@@ -1,0 +1,229 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --rojo: #d62828;
+  --naranja: #f77f00;
+  --beige: #ffe5d9;
+  --fuente: 'Segoe UI', sans-serif;
+}
+
+/* Base */
+body {
+  font-family: var(--fuente);
+  background: linear-gradient(to right, #fff8f0, var(--beige));
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: var(--rojo);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+.logo img {
+  max-width: 150px;
+}
+
+/* Navegación */
+.nav-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+  background-color: var(--naranja);
+  border-radius: 4px;
+}
+
+/* Menú hamburguesa */
+.menu-hamburguesa {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-hamburguesa span {
+  height: 4px;
+  width: 25px;
+  background-color: white;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* Main */
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+  font-size: 2em;
+  color: var(--rojo);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+h3 {
+  color: var(--naranja);
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+p, label, li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/*  todo lo del Acordeón */
+.acordeon details {
+  background-color: var(--beige);
+  border: 2px solid var(--naranja);
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.acordeon details[open] {
+  background-color: #fff8f0;
+  border-color: var(--rojo);
+}
+
+.acordeon summary {
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+  color: var(--rojo);
+  list-style: none;
+  position: relative;
+  padding-right: 25px;
+}
+
+.acordeon summary::after {
+  content: "➕";
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.2em;
+  transition: transform 0.3s ease;
+}
+
+.acordeon details[open] summary::after {
+  content: "➖";
+  transform: rotate(180deg);
+}
+
+.acordeon ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.acordeon a {
+  color: var(--rojo);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.acordeon a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: var(--rojo);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+  border-top: 4px solid var(--naranja);
+}
+
+footer a {
+  color: var(--beige);
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive: menú hamburguesa */
+@media (max-width: 768px) {
+  .nav-principal {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .menu-hamburguesa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: var(--rojo);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .menu li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .nav-principal.active .menu {
+    display: flex;
+  }
+}
+
