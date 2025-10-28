@@ -25,6 +25,7 @@ body {
 
 /* Encabezado */
 header {
+
   background-color: var(--rojo);
   color: white;
   padding: 20px 0;
@@ -35,8 +36,9 @@ header {
 
 .header-container {
   display: flex;
-  flex-direction: column;
+ flex-direction: column;  /* -- Esta es la linea que no dejaba ponerlos a la par */
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -58,8 +60,6 @@ header {
   width: 100%;
 }
 
-
-
 .menu {
   list-style: none;
   display: flex;
@@ -80,7 +80,7 @@ header {
 
 .menu li a:hover {
   background-color: var(--naranja);
-  border-radius: 4px;
+  /* border-radius: 4px; */
 }
 
 /* Menú hamburguesa */

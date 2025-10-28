@@ -7,29 +7,36 @@
     <!--Imagen de la pestaña del navegador-->
     <link rel="icon" href="../img/Logo/Gastrourban Logo.png" type="image/png">
     
-    <link rel="stylesheet" href="../CSS/indexbase.css">
+    <link rel="stylesheet" href="../CSS/estiloInicio.css">
     <link rel="stylesheet" href="../CSS/estiloblogs.css">
 </head>
 <body>
     <!--Encabezado generico para todas las paginas-->
     <header>
-        <div class="logonombre">
-        <a href="index.html">
-            <img src="../img/Logo/Gastrourban Logo.png" alt="GastroUrban Logo">
-        </a>
-        <a href="index.html">
-            <h1> GastroUrban</h1>
-        </a>
+        <div class="header-container">
+            <div class="logo">
+            <img src="../img/Logo/GastrourbanRemove.png" alt="Logo de GastroUrban">
+            </div>
+            <div>
+                <nav class="nav-principal">
+                <ul class="menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="blogs.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="acercaDe.html">Acerca de</a></li>
+                </ul>
+            </div>
+
+
+            <div class="menu-hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            </nav>
         </div>
-        <nav id="menu">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="blogs.html">Blogs</a></li>
-                <li><a href="acercaDe.html">Acerca De</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
     <div class="page-layout">
         <main>
@@ -41,7 +48,7 @@
                     ofrecemos una variedad de blogs que te ayudarán a descubrir, aprender y avanzar en tu camino.
                 </p>
             </div>
-
+            <!--Selector por Categorias para dar más interacción con el usuario-->
             <div>
                 <h2>Filtrar por categoría</h2>
                 <select id="categoryFilter">
@@ -54,70 +61,105 @@
 
             <div id="postsContainer">
                 <div class="blog-card post" data-category="receta">
-                    <img src="../img/receta1.jpg" alt="">
-                <h2>Receta marizcos</h2>
-                <p>Una introducción práctica al lenguaje que da vida a la web.</p>
+                    <img src="../img/comida_blog1.png" alt="Como es la comida en otros países">
+                <h2>¿Que comida callejera hay en otros países?¿Se parecen a las nuestras?</h2>
+                <p>
+                    Conocer que podriamos encontrarnos en otros países, si un dia normal se nos da un antojo y estamos viajando. 
+                    Que mejor que ir prevenidos y saber que podriamos comprar y poder disfrutar de la sabrosa comida de las calles.
+                </p>
+                <a href="paginas_blogs/blog1.html">Leer más...</a>
                 </div>
 
                 <div class="blog-card post" data-category="receta">
-                    <h2>Diseño instruccional en entornos digitales</h2>
-                    <p>Claves para crear experiencias de aprendizaje efectivas.</p>
+                    <img src="../img/blog2.jpeg" alt="Calle y cocina">
+                    <h2>Calle y Cocina</h2>
+                    <p>Exploremos las calles de nuestros países vecinos, que nos ofrecen aparte de bellos lugares para vacacionar.
+                        Sin duda es un buen punto de partida para que se nos antogen conocerlos.
+                    </p>
+
+                    <a href="paginas_blogs/blog2.html">Leer más...</a>
                 </div>
 
                 <div class="blog-card post" data-category="consejo">
-                    <h2>Alimentación consciente</h2>
-                    <p>Cómo mejorar tu bienestar a través de hábitos saludables.</p>
+                    <img src="../img/blog3.jpg" alt="Errores y más errores">
+                    <h2>Cocina sin errores - ¿Que podria salir mal?</h2>
+                    <p>
+                        Todos cometemos errores en nuestras cocinas, pero que tan comunes son.
+                        Descubre que cosas ya no debes hacer y que hacer para mejorar.
+                    </p>
+
+                    <a href="paginas_blogs/blog3.html">Leer más...</a>
                 </div>
 
                 <div class="blog-card post" data-category="consejo">
-                    <h2>Accesibilidad web: más allá del diseño</h2>
-                    <p>Buenas prácticas para crear sitios inclusivos. lo</p>
+                    <img src="../img/blogciencia.png" alt="Ciencia y Sabor conoce que hay detras">
+                    <h2>Sabor y Ciencia - ¿Van de la mano?</h2>
+                    <p>Como podria la ciencia estar relacionada con algo tan comun como la comida, no esperres más para descubrir como  esta diciplina esta presente 
+                        y te puede ayudar en la cocina.
+                    </p>
+
+                    <a href="paginas_blogs/blog4.html">Leer más...</a>
                 </div>
 
-                            <div class="blog-card post" data-category="cocinaUtencilio">
-                    <h2>Accesibilidad web: más allá del diseño</h2>
-                    <p>Buenas prácticas para crear sitios inclusivos. </p>
+                <div class="blog-card post" data-category="cocinaUtencilio">
+                    <img src="../img/blogdiseñococina.png" alt="">
+                    <h2>Diseño y Cocina</h2>
+                    <p>
+                        ¿Quieres una linda cocina con la que presumir?¿Es lo belleza y estetica o tambien debe funcionar facilmente?, en este blog encotraras como un diseño 
+                        no debe sacrificar la funcionalidad o por otro lado la estetica no debe dificultar la funcionalidad.
+                    </p>
+
+                    <a href="paginas_blogs/blog5.html">Leer más...</a>
                 </div>
 
-                            <div class="blog-card post" data-category="cocinaUtencilio">
-                    <h2>Accesibilidad web: más allá del diseño</h2>
-                    <p>Buenas prácticas para crear sitios inclusivos.</p>
+                <div class="blog-card post" data-category="receta">
+                    <img src="../img/bloghistaria.png" alt="Cocina de la mano con la historia">
+                    <h2>Cocina de la mano con la historia</h2>
+                    <p>¿De donde vienen los platillos?¿Por que son tan importantes?, no es solo cocinar si no saber porque se preparan su origen, nos de una vista mas 
+                        amplia de porque su saber.
+                    </p>
+
+                    <a href="paginas_blogs/blog6.html">Leer más...</a>
                 </div>
 
-                            <div class="blog-card post" data-category="cocinaUtencilio">
-                    <h2>Accesibilidad web: más allá del diseño</h2>
-                    <p>Buenas prácticas para crear sitios inclusivos.</p>
-                </div>
+                <div class="blog-card post" data-category="cocinaUtencilio">
+                    <img src="../img/blogportatil.png" alt="cocina portatil">
+                    <h2>Cocina portatil - ¿Es posible?</h2>
+                    <p>Que mejor para los amantes de la concina que una que podamos llevar a todos lados, pero ¿es posible?. Descubrelo en este blog y maravillate con 
+                        lo que puedes encontrar.
+                    </p>
 
-                            <div class="blog-card post" data-category="cocinaUtencilio">
-                    <h2>Accesibilidad web: más allá del diseño</h2>
-                    <p>Buenas prácticas para crear sitios inclusivos.</p>
-                </div>
-
-                            <div class="blog-card post" data-category="receta">
-                    <h2>Accesibilidad web: más allá del diseño</h2>
-                    <p>Buenas prácticas para crear sitios inclusivos.</p>
-                </div>
-
-                            <div class="blog-card post" data-category="consejo">
-                    <h2>Accesibilidad web: más allá del diseño</h2>
-                    <p>Buenas prácticas para crear sitios inclusivos.</p>
+                    <a href="paginas_blogs/blog7.html">Leer más...</a>
                 </div>
 
             </div>      
             <!--Vinculo a las acciones para la pagina de los blogs-->
             <script src="../JS/blog_accion.js"></script>
+
             </main>
 
         
-        <aside class="indice">
-            <h3>Índice</h3>
-            <ul>
-            <li><a href="#categoria-recetas">Recetas</a></li>
-            <li><a href="#categoria-consejos">Consejos</a></li>
-            <li><a href="#categoria-utensilios">Cocina y Utensilios</a></li>
-        </ul>
-        </aside>
+
+        
     </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 GastroUrban. Todos los derechos reservados.</p>
+        <p>Síguenos en:
+            <a href="https://www.facebook.com">Facebook</a> |
+            <a href="https://www.instagram.com">Instagram</a> |
+            <a href="https://www.tiktok.com">TikTok</a>
+        </p>
+        <p>Ubicación: Alajuela, Costa Rica</p>
+    </footer>
+
+    <script>
+        const hamburguesa = document.querySelector('.menu-hamburguesa');
+        const nav = document.querySelector('.nav-principal');
+
+        hamburguesa.addEventListener('click', () => {
+        nav.classList.toggle('active');
+});
+    </script>
 </body>
 </html>
