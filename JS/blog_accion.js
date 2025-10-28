@@ -9,3 +9,11 @@ filter.addEventListener('change', () => {
         post.style.display = (selected === 'all' || category === selected) ? 'block' : 'none';
     });
 });
+
+//Menu Hambuergesa del Blog
+const hamburguesa = document.querySelector('.menu-hamburguesa');
+        const nav = document.querySelector('.nav-principal');
+
+        hamburguesa.addEventListener('click', () => {
+        nav.classList.toggle('active');
+});
