@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preguntas frecuentes</title>
+    <link rel="stylesheet" href="../CSS/estiloPreguntasFrecuentes.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/Logo/GastrourbanRemove.png" alt="Logo de GastroUrban">
+        </div>
+        <nav class="nav-principal">
+            <ul class="menu">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="preguntasFrecuentes.html">Preguntas frecuentes</a></li>
+                <li><a href="acercaDe.html">Acerca de</a></li>
+            </ul>
+            <div class="menu-hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Preguntas Frecuentes</h1>
+
+        <section class="acordeon">
+            <details>
+                <summary><strong>1. ¿Qué tipo de comida ofrece GastroUrban?</strong></summary>
+                <p>GastroUrban se especializa en <strong>comida urbana</strong>, una mezcla de sabores locales e internacionales. Nuestro menú incluye:</p>
+                <ul>
+                    <li>🍔 Hamburguesas artesanales</li>
+                    <li>🍛 Platos típicos costarricenses</li>
+                    <li>🌮 Tacos fusión</li>
+                    <li>🥗 Bowls saludables</li>
+                    <li>🍹 Bebidas naturales y batidos</li>
+                </ul>
+                <p>Cada plato está diseñado para ofrecer una experiencia única, con ingredientes frescos y preparación al momento.</p>
+            </details>
+
+            <details>
+                <summary><strong>2. ¿Tienen opciones vegetarianas o veganas?</strong></summary>
+                <p>¡Sí! En GastroUrban creemos en la <em>inclusión alimentaria</em>. Nuestro menú incluye:</p>
+                <ul>
+                    <li>🌱 Tacos veganos con vegetales salteados y salsa de aguacate</li>
+                    <li>🥗 Bowl vegetariano con quinoa, garbanzos y aderezo de la casa</li>
+                    <li>🍹 Batidos sin lácteos elaborados con frutas locales y leche vegetal</li>
+                </ul>
+                <p>Además, nuestros colaboradores están capacitados para adaptar platos según tus necesidades.</p>
+            </details>
+
+            <details>
+                <summary><strong>3. ¿Dónde están ubicados y cómo puedo contactarlos?</strong></summary>
+                <h3>📍 Ubicación</h3>
+                <p>Avenida Central, frente al parque de los mangos, Alajuela Centro, Alajuela</p>
+                <h3>📞 Contacto</h3>
+                <p>Teléfono: +506 0000-0000</p>
+                <h3>📧 Correo electrónico</h3>
+                <p><a href="mailto:contacto@gastourban.cr">contacto@gastourban.cr</a></p>
+                <h3>🌐 Página de contacto</h3>
+                <p><a href="Contacto.html">👉 Ir a la sección de contacto</a></p>
+            </details>
+
+            <details>
+                <summary><strong>4. ¿Ofrecen servicio a domicilio o para llevar?</strong></summary>
+                <p>Sí, ofrecemos ambas opciones. Puedes disfrutar de nuestros platos desde casa o pedir para llevar. Las formas de ordenar son:</p>
+                <ul>
+                    <li>🧾 Directamente en el restaurante</li>
+                    <li>📞 Por llamada o WhatsApp</li>
+                    <li>📱 A través de apps de delivery (Uber Eats, PedidosYa)</li>
+                </ul>
+                <p>El tiempo estimado de entrega es de <strong>30 a 45 minutos</strong>, dependiendo de la zona (únicamente en Alajuela).</p>
+            </details>
+
+            <details>
+                <summary><strong>5. ¿Aceptan pagos con tarjeta o solo efectivo?</strong></summary>
+                <p>Aceptamos múltiples formas de pago:</p>
+                <ul>
+                    <li>💳 Tarjetas de crédito y débito</li>
+                    <li>💵 Efectivo</li>
+                    <li>📱 Transferencias SINPE móvil</li>
+                </ul>
+                <p>Queremos que tu experiencia sea cómoda desde el primer bocado hasta el último clic.</p>
+            </details>
+
+            <details>
+                <summary><strong>6. ¿Puedo reservar para eventos o grupos grandes?</strong></summary>
+                <p>Claro que sí. Contamos con espacio para eventos privados, reuniones familiares o grupos grandes. Para reservar:</p>
+                <ul>
+                    <li>📞 Llámanos al número de contacto</li>
+                    <li>💬 Escribe por WhatsApp</li>
+                    <li>📝 Completa el formulario en nuestra sección de eventos: <a href="Contacto.html">👉 Reservar evento</a></li>
+                </ul>
+                <p><em>Recomendamos reservar con al menos 48 horas de anticipación.</em></p>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 GASTROURBAN. Todos los derechos reservados.</p>
+        <p>
+            <a href="https://www.facebook.com">Facebook</a> |
+            <a href="https://www.instagram.com">Instagram</a> |
+            <a href="https://www.tiktok.com">TikTok</a>
+        </p>
+    </footer>
+
+    <script>
+        const hamburguesa = document.querySelector('.menu-hamburguesa');
+        const nav = document.querySelector('.nav-principal');
+
+        hamburguesa.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
