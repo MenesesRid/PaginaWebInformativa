@@ -31,7 +31,7 @@
     
     <h1>Contáctanos</h1>
 
-    <h2>📞 Información de contacto</h2>
+    <center><h2>📞 Información de contacto</h2></center>
     <Center>
     <p><strong>Teléfono:</strong> +506 6029-0100</p>
     <p><strong>Dirección:</strong> Avenida Central, frente al parque de los mangos, Alajuela Centro, Alajuela</p>
@@ -40,8 +40,8 @@
 
     <hr>
 
-    <h2>📝 Formulario de contacto</h2>
-    <form action="mailto:condominiumlive16@gmail.com" method="post" enctype="text/plain">
+    <center><h2>📝 Formulario de contacto</h2></center>
+    <form id="formularioContacto">
         
         <!-- Entrada 1: Nombre (texto) -->
         <label for="nombre">Nombre completo:</label><br>
@@ -76,7 +76,7 @@
         <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea><br><br>
 
         <!-- Botón de envío -->
-        <input type="submit" value="Enviar mensaje">
+        <input type="submit" value="Enviar mensaje" id="botonEnviar">
         <input type="reset" value="Limpiar formulario">
 
     </form>
@@ -96,6 +96,14 @@
 
         hamburguesa.addEventListener('click', () => {
         nav.classList.toggle('active');
+        });
+    </script>
+
+    <script>
+        document.getElementById('formularioContacto').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('¡Mensaje enviado!');
+            this.reset();
         });
     </script>
 
